@@ -2,17 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : MonoBehaviour
+public class enemy : character_stats
 {
-    // Start is called before the first frame update
-    void Start()
+    private double base_exp;
+
+    public double BASE_EXP
     {
-        
+        get
+        {
+            return base_exp;
+        }
+        set
+        {
+            base_exp = value;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public double DROP_EXP
     {
-        
+        get
+        {
+            return base_exp * System.Math.Exp(LVL);
+        }
     }
 }
