@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : character_stats
+public class Enemy : Character_stats
 {
     private double base_exp;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class character_stats : MonoBehaviour
+public class Character_stats : MonoBehaviour
 {
     private double hp;
     private double current_hp;
